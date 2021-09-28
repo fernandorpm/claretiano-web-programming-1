@@ -44,8 +44,13 @@ nav {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 a {
@@ -56,7 +61,8 @@ a {
   padding: 8px 12px;
 }
 
-a:hover {
+a:hover,
+a.current {
   background: black;
   color: whitesmoke;
   transition: 0.2s;
@@ -113,23 +119,48 @@ a:hover {
 
 main {
   min-height: calc(100vh - 80px);
-  padding-top: 50px;
 }
 
 /* Sessão Nosso Trabalho */
 
 .nosso-trabalho-bloco {
   gap: 30px;
+  padding: 50px 0;
 }
 
 .nosso-trabalho-img {
   width: 500px;
 }
 
+/* Sessão Conhecer Soluções */
+
+.conhecer-solucoes-bloco {
+  background: #f9fafc;
+  padding: 100px 0;
+}
+
+.conhecer-solucoes-bloco > div > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.conhecer-solucoes-bloco h2 {
+  text-align: center;
+}
+
+.button-portfolio {
+  background: #6169f1;
+  font-weight: 500;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
 /* ESTILIZAÇÃO FOOTER =========================================================== */
 
 .footer {
-  background: whitesmoke;
+  background: rgb(26, 27, 29);
   padding: 30px 0;
 }
 
@@ -154,11 +185,19 @@ main {
   .hero h1 {
     font-size: 26px;
   }
+
+  .nosso-trabalho-img {
+    width: 400px;
+  }
 }
 
 @media (max-width: 700px) {
   .hero {
     background-size: 450px;
+  }
+
+  .nosso-trabalho-img {
+    width: 300px;
   }
 }
 
@@ -169,5 +208,17 @@ main {
 
   .hero h1 {
     font-size: 20px;
+  }
+
+  .nosso-trabalho-bloco {
+    flex-direction: column;
+  }
+
+  .nosso-trabalho-bloco:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .nosso-trabalho-img {
+    width: 100%;
   }
 }
