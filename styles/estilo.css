@@ -29,8 +29,17 @@ h6 {
   font-family: 'Montserrat', sans-serif;
 }
 
+h5,
+h6 {
+  color: grey;
+}
+
 nav {
   width: 100%;
+}
+
+main {
+  min-height: calc(100vh - 111px);
 }
 
 .container {
@@ -115,11 +124,7 @@ a.current {
   width: min-content;
 }
 
-/* ESTILIZAÇÃO MAIN ============================================================= */
-
-main {
-  min-height: calc(100vh - 80px);
-}
+/* ESTILIZAÇÃO INDEX ============================================================ */
 
 /* Sessão Nosso Trabalho */
 
@@ -148,7 +153,7 @@ main {
   text-align: center;
 }
 
-.button-portfolio {
+.button-lead {
   background: #6169f1;
   font-weight: 500;
   color: white;
@@ -157,7 +162,41 @@ main {
   margin: 0 auto;
 }
 
+/* ESTILIZAÇÃO TRABALHE CONOSCO ================================================= */
+
+.trabalhe-conosco-bloco {
+  padding: 70px 0 50px 0;
+}
+
+.trabalhe-conosco-bloco > img {
+  max-width: 50%;
+}
+
+.trabalhe-conosco-vagas li {
+  border-bottom: 1px solid lightgray;
+}
+
+.trabalhe-conosco-vagas a {
+  display: flex;
+  justify-content: space-between;
+  color:#6169f1;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.trabalhe-conosco-vagas a:hover {
+  background: whitesmoke;
+
+}
+
+.trabalhe-conosco-vagas a span {
+  color: grey;
+  font-weight: 300;
+}
+
+
 /* ESTILIZAÇÃO FOOTER =========================================================== */
+
 
 .footer {
   background: rgb(26, 27, 29);
@@ -198,6 +237,18 @@ main {
 
   .nosso-trabalho-img {
     width: 300px;
+  }
+
+  .trabalhe-conosco-bloco {
+    flex-direction: column;
+  }
+
+  .trabalhe-conosco-bloco img {
+    width: 100%;
+  }
+
+  .trabalhe-conosco-vagas span {
+    display: none;
   }
 }
 
