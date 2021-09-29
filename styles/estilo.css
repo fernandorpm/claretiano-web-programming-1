@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;800&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* ESTILIZAÇÃO GERAL =========================================================== */
+
+body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.devpro-logo {
+  font-weight: 800;
+}
+
+.devpro-logo span {
+  color: white;
+  background: black;
+  padding: 0 3px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h5,
+h6 {
+  color: grey;
+}
+
+nav {
+  width: 100%;
+}
+
+main {
+  min-height: calc(100vh - 111px);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  transition: 1s;
+  font-weight: 400;
+  padding: 8px 12px;
+}
+
+a:hover,
+a.current {
+  background: black;
+  color: whitesmoke;
+  transition: 0.2s;
+}
+
+hr {
+  border: 1px solid whitesmoke;
+}
+
+/* ESTILIZAÇÃO HEADER ========================================================== */
+
+.header {
+  height: 70px;
+  border-bottom: 1px solid whitesmoke;
+  position: fixed;
+  width: 100%;
+  background: white;
+}
+
+.hero {
+  height: 400px;
+  background-color: #f9fafc;
+  background-image: url('../images/dev_capa.jpg');
+  background-size: 600px;
+  background-position: bottom right;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  color: #6169f1;
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero h1 span {
+  background: #fbd15b;
+  padding: 10px;
+}
+
+.hero h2 {
+  color: white;
+  background: #151b56;
+  padding: 10px;
+  display: block;
+  width: min-content;
+}
+
+/* ESTILIZAÇÃO INDEX ============================================================ */
+
+/* Sessão Nosso Trabalho */
+
+.nosso-trabalho-bloco {
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.nosso-trabalho-img {
+  width: 500px;
+}
+
+/* Sessão Conhecer Soluções */
+
+.lead-bloco {
+  background: #f9fafc;
+  padding: 100px 0;
+}
+
+.lead-bloco > div > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.lead-bloco h2 {
+  text-align: center;
+}
+
+.button-lead {
+  background: #6169f1;
+  font-weight: 500;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+/* ESTILIZAÇÃO TRABALHE CONOSCO ================================================= */
+
+.trabalhe-conosco-bloco {
+  padding: 70px 0 50px 0;
+}
+
+.trabalhe-conosco-bloco > img {
+  max-width: 50%;
+}
+
+.trabalhe-conosco-vagas li {
+  border-bottom: 1px solid lightgray;
+}
+
+.trabalhe-conosco-vagas a {
+  display: flex;
+  justify-content: space-between;
+  color:#6169f1;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.trabalhe-conosco-vagas a:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+.trabalhe-conosco-vagas a span {
+  color: grey;
+  font-weight: 300;
+}
+
+/* ESTILIZAÇÃO PORTFÓLIO ======================================================== */
+
+.design-thinking-bloco {
+  padding-top: 100px;
+  color: white;
+  background: #1a1a1a;
+  padding-bottom: 50px;
+}
+
+.design-thinking-img {
+  background-image: url('../images/design_thinking.png');
+  background-size: cover;
+  height: 200px;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cloud-solutions-bloco {
+  padding: 50px 0;
+}
+
+.cloud-solutions-img {
+  background-image: url('../images/cloud_solutions.png');
+  background-size: cover;
+  height: 420px;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ESTILIZAÇÃO SOBRE NÓS ======================================================== */
+
+.sobre-empresa-bloco {
+  padding: 100px 0 50px 0;
+}
+
+.sobre-empresa-bloco h1 {
+  font-size: 30px;
+}
+
+.sobre-empresa-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.sobre-empresa-valores > div {
+  width: calc(100% / 3 - 100px);
+}
+
+.sobre-funcionarios-bloco {
+  flex-wrap: wrap;
+}
+
+.funcionario {
+  background-size: cover;
+  background-position: center;
+  width: 230px;
+  min-width: 230px;
+  height: 300px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.funcionario h5 {
+  position: absolute;
+  bottom: -30px;
+  margin: 0;
+}
+
+.f1 {
+  background-image: url('../images/fernando_small.jpg');
+}
+
+.f2 {
+  background-image: url('../images/barbara_small.jpg');
+}
+
+.f3 {
+  background-image: url('../images/arthur_small.jpg');
+}
+
+.f4 {
+  background-image: url('../images/giulia_small.jpg');
+}
+
+
+/* ESTILIZAÇÃO CONTATO ========================================================== */
+
+.contato-bloco {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+}
+
+.contato-bloco label {
+  font-weight: 500;
+}
+
+.contato-bloco form input,
+.contato-bloco form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px 0 30px 0;
+  border: 1px solid lightgray;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}
+
+.contato-bloco button {
+  border: 0;
+  padding: 10px 50px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  background: #6169f1;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contato-bloco button:hover {
+  opacity: 0.7;
+}
+
+/* ESTILIZAÇÃO FOOTER =========================================================== */
+
+
+.footer {
+  background: rgb(26, 27, 29);
+  padding: 30px 0;
+}
+
+.footer > div {
+  text-align: center;
+}
+
+.footer > div > a {
+  padding: 10px;
+} 
+
+
+/* MEDIA QUERIES ================================================================ */
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .nosso-trabalho-img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    background-size: 450px;
+  }
+
+  .nosso-trabalho-img {
+    width: 300px;
+  }
+
+  .trabalhe-conosco-bloco {
+    flex-direction: column;
+  }
+
+  .trabalhe-conosco-bloco img {
+    width: 100%;
+  }
+
+  .trabalhe-conosco-vagas span {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    background-size: 350px;
+  }
+
+  .hero h1 {
+    font-size: 20px;
+  }
+
+  .nosso-trabalho-bloco {
+    flex-direction: column;
+  }
+
+  .nosso-trabalho-bloco:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .nosso-trabalho-img {
+    width: 100%;
+  }
+
+  .contato-bloco button {
+    width: 100%;
+  }
+
+  .cloud-solutions-img {
+    height: 360px;
+  }
+}
