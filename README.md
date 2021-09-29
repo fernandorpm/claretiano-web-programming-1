@@ -1,7 +1,8 @@
 # Programação para Web - Atividade do Portfólio 1
 
+![Preview Website](./devpro.gif)
 ## Objetivo
-- Construir um site utilizando folha de estilos em cascata. 
+- Construir um site utilizando folha de estilos em cascata.
 
 ## Descrição da Atividade 
 > Nesta atividade você deverá construir um site para uma empresa da área de informática. O site deverá conter pelo menos cinco páginas. Os seguintes requisitos devem ser respeitados: 
