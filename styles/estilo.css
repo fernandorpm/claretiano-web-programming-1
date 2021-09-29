@@ -198,9 +198,65 @@ hr {
   font-weight: 300;
 }
 
+/* ESTILIZAÇÃO PORTFÓLIO ======================================================== */
+
 /* ESTILIZAÇÃO SOBRE NÓS ======================================================== */
 
-/* ESTILIZAÇÃO PORTFÓLIO ======================================================== */
+.sobre-empresa-bloco {
+  padding: 100px 0 50px 0;
+}
+
+.sobre-empresa-bloco h1 {
+  font-size: 30px;
+}
+
+.sobre-empresa-valores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.sobre-empresa-valores > div {
+  width: calc(100% / 3 - 100px);
+}
+
+.sobre-funcionarios-bloco {
+  flex-wrap: wrap;
+}
+
+.funcionario {
+  background-size: cover;
+  background-position: center;
+  width: 230px;
+  min-width: 230px;
+  height: 300px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.funcionario h5 {
+  position: absolute;
+  bottom: -30px;
+  margin: 0;
+}
+
+.f1 {
+  background-image: url('../images/fernando_small.jpg');
+}
+
+.f2 {
+  background-image: url('../images/barbara_small.jpg');
+}
+
+.f3 {
+  background-image: url('../images/arthur_small.jpg');
+}
+
+.f4 {
+  background-image: url('../images/giulia_small.jpg');
+}
+
 
 /* ESTILIZAÇÃO CONTATO ========================================================== */
 
