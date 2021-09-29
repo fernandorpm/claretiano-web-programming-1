@@ -77,6 +77,10 @@ a.current {
   transition: 0.2s;
 }
 
+hr {
+  border: 1px solid whitesmoke;
+}
+
 /* ESTILIZAÇÃO HEADER ========================================================== */
 
 .header {
@@ -139,17 +143,17 @@ a.current {
 
 /* Sessão Conhecer Soluções */
 
-.conhecer-solucoes-bloco {
+.lead-bloco {
   background: #f9fafc;
   padding: 100px 0;
 }
 
-.conhecer-solucoes-bloco > div > div > div {
+.lead-bloco > div > div > div {
   display: flex;
   align-items: center;
 }
 
-.conhecer-solucoes-bloco h2 {
+.lead-bloco h2 {
   text-align: center;
 }
 
@@ -186,7 +190,7 @@ a.current {
 
 .trabalhe-conosco-vagas a:hover {
   background: whitesmoke;
-
+  color: black;
 }
 
 .trabalhe-conosco-vagas a span {
@@ -194,6 +198,48 @@ a.current {
   font-weight: 300;
 }
 
+/* ESTILIZAÇÃO SOBRE NÓS ======================================================== */
+
+/* ESTILIZAÇÃO PORTFÓLIO ======================================================== */
+
+/* ESTILIZAÇÃO CONTATO ========================================================== */
+
+.contato-bloco {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0 50px 0;
+}
+
+.contato-bloco label {
+  font-weight: 500;
+}
+
+.contato-bloco form input,
+.contato-bloco form textarea {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px 0 30px 0;
+  border: 1px solid lightgray;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+}
+
+.contato-bloco button {
+  border: 0;
+  padding: 10px 50px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  background: #6169f1;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contato-bloco button:hover {
+  opacity: 0.7;
+}
 
 /* ESTILIZAÇÃO FOOTER =========================================================== */
 
@@ -270,6 +316,10 @@ a.current {
   }
 
   .nosso-trabalho-img {
+    width: 100%;
+  }
+
+  .contato-bloco button {
     width: 100%;
   }
 }
