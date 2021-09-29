@@ -200,6 +200,35 @@ hr {
 
 /* ESTILIZAÇÃO PORTFÓLIO ======================================================== */
 
+.design-thinking-bloco {
+  padding-top: 100px;
+  color: white;
+  background: #1a1a1a;
+  padding-bottom: 50px;
+}
+
+.design-thinking-img {
+  background-image: url('../images/design_thinking.png');
+  background-size: cover;
+  height: 200px;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cloud-solutions-bloco {
+  padding: 50px 0;
+}
+
+.cloud-solutions-img {
+  background-image: url('../images/cloud_solutions.png');
+  background-size: cover;
+  height: 420px;
+  min-width: 280px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 /* ESTILIZAÇÃO SOBRE NÓS ======================================================== */
 
 .sobre-empresa-bloco {
@@ -377,5 +406,9 @@ hr {
 
   .contato-bloco button {
     width: 100%;
+  }
+
+  .cloud-solutions-img {
+    height: 360px;
   }
 }
